@@ -4,39 +4,123 @@
   padding: 2rem;
   text-align: center;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(23, 21, 21, 0.7);
+  padding: 10px 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar div {
+  display: flex;
+  gap: 350px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding: 8px 15px;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
 }
 
-.card {
-  padding: 2em;
+.navbar a:hover {
+  color: #1e90ff;
 }
 
-.read-the-docs {
-  color: #888;
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.home img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.home h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin: 0;
+}
+
+.home h2 {
+  font-size: 1.5rem;
+  color: #666;
+  margin: 10px 0 0 0;
+  max-width: 800px;
+}
+
+.box-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 200px;
+  background-color: rgb(171, 156, 156, 0.5);
+}
+
+.box-card {
+  background-color: #8da8a2;
+  border: 1px solid #333;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px hwb(0 4% 78% / 0.5);
+  max-width: 200px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.box-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.box-card h3 {
+  font-size: 1.2rem;
+  color: #011a32;
+  margin: 10px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input, select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #1e90ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #1c86ee;
 }
